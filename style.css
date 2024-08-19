@@ -111,29 +111,9 @@ section {
     padding-right: 30px;
 }
 
-.main-btn {
-    color: #fff;
-    background-color: #5865f2;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
-    background-image: url("https://i.postimg.cc/CMmqFzrq/B.jpg");
-}
-
-.main-btn:hover {
-    background-color: #5865f2;
-    transform: scale(1.1);
-}
 
 
-/* CSS */
-/* CSS */
+
 .button-24 {
   background: #ff0000;
   border: 1px solid #ff0000;
@@ -393,9 +373,6 @@ section {
      
     }
 }
-	-o-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
 
 .accordion li.default .submenu {display: block;}
 /**
@@ -432,7 +409,7 @@ section {
 
 
 hr {
-    background: ##ff0000;
+    background: #ff0000;
 	margin: 2px;
 	height: 3px;
 	width: 150px;
@@ -532,154 +509,8 @@ h1 {
     right: 0;
 } 
 
-sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: -250px;
-  width: 250px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  overflow-y: auto;
-  transition: all 0.3s ease-out;
-}
 
-.sidebar.active {
-  left: 0;
-}
 
-.sidebar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  background-color: #ff0000;
-  color: #fff;
-}
-
-.sidebar-header h3 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.close-btn {
-  font-size: 30px;
-  color: #fff;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  color: #f00;
-}
-
-.sidebar-content {
-  padding: 20px;
-}
-
-.sidebar-content p {
-  margin-top: 0;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.sidebar-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar-content li a {
-  display: block;
-  padding: 10px;
-  color: #666;
-  text-decoration: none;
-  transition: all 0.3s ease-out;
-}
-
-.sidebar-content li a:hover {
-  background-color: #eee;
-}
-
-/* The switch the box around the slider */
-
-.switch {
-
-display: block;
-
-float: right; margin: 3rem;
-
-<--width-of-switch: 3.5em; --height-of-switch: 2em;
-
-/* size of sliding icon -- sun and moon */
-
---size-of-icon: 1.4em;
-
-/* it is like a inline-padding of switch */
-
---slider-offset: 0.3em;
-
-position: relative; width: var(--width-of-switch);
-
-height: var(--height-of-switch);
-
-}
-
-/* Hide default HTML checkbox */ .switch input {
-
-opacity: 0;
-
-width: e;
-
-height: 0;
-
-}
-/* The slider */
-
-top: 0;
-
-.slider { position: absolute; cursor: pointer; left: 0; bottom: 0; background-color: #1a1a1a; transition: .4s; border-radius: 30px;
-
-right: 0;
-
-}
-
-.slider:before {
-
-position: absolute;
-
-content:"";
-
-height: var(--size-of-icon, 1.4em); width: var(--size-of-icon, 1.4em); border-radius: 20px;
-
-left: var(--slider-offset, 0.3em);
-
-top: 50%;
-
-transform: translateY(-50%);
-
-background: linear-gradient(40deg, #360000,#1c1c1c 70%); transition: .4s;
-
-}
-
-input:checked + .slider { background-color: #303136;
-
-}
-
-input:checked + .slider:before { left: calc(100% - (var(--size-of-icon, 1.4em) +
-
-var(--slider-offset, 0.3em))); background: #303136;
-
-/* change the value of second inset in box- shadow to change the angle and direction of the moon */
-
-box-shadow: inset -3px -2px 5px 2px #8983f7, inset -10px -4px 0 0 #a3dafb; }
-
-/* Dark theme */ .dark-mode-theme { background: #212121; color: #E6E6E6;
-
-                                  }
-
-}
 
 .container{
     position: relative;
