@@ -135,8 +135,8 @@ section {
 /* CSS */
 /* CSS */
 .button-24 {
-  background: #FF4742;
-  border: 1px solid #FF4742;
+  background: #ff0000;
+  border: 1px solid #ff0000;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -163,7 +163,7 @@ section {
 .button-24:active {
   background-color: initial;
   background-position: 0 0;
-  color: #FF4742;
+  color: #ff0000;
 }
 
 .button-24:active {
