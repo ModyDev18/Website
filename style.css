@@ -510,7 +510,75 @@ h1 {
 } 
 
 
+sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  transition: all 0.3s ease-out;
+}
 
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.close-btn {
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f00;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content p {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-content li a {
+  display: block;
+  padding: 10px;
+  color: #666;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.sidebar-content li a:hover {
+  background-color: #eee;
+}
 
 .container{
     position: relative;
