@@ -9,12 +9,10 @@
 }
  
 *{
-   margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
+    scroll-behavior: smooth; 
     font-family: 'Poppins', sans-serif;
 }
 
@@ -222,7 +220,7 @@ section {
 
 .card {
     background-color: #171717;
-    width: 24em;
+    width: 25em;
     box-shadow: 0 5px 10px rgba(1 1 1 / 15%);
     border-radius: 20px;
     padding: 30px;
