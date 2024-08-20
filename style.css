@@ -9,18 +9,17 @@
 }
  
 *{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth; 
-    font-family: 'Poppins', sans-serif;
 }
 
 
 
-
 .logo {
-  display: center;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -35,7 +34,8 @@ code {
   height: 50px; 
 }
 
-header{
+
+header {
     
     width: 100%;
     position: fixed;
@@ -44,8 +44,8 @@ header{
     justify-content: center;
     align-items: center;
     padding: 10px 200px ;
-   color: #1f0200;
-  background-color: rgb(31, 2, 0, 0.15);
+   color: #030303;
+  background-color: rgba(44, 0, 0, 0.281);
 backdrop-filter: blur(40px);
  
     
@@ -53,7 +53,22 @@ backdrop-filter: blur(40px);
  
 
 
+.navigation a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-left: 10px;
+    letter-spacing: 8px;
+    justify-content: start;
+    align-items: flex-start;
+    text-shadow: 0px 0px 5px var(--main-m-color);
+  letter-spacing: 2px;
+}
 
+.navigation a:hover{
+    color: #ffffff;
+}
 
 
 
@@ -67,19 +82,18 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-right: 30px;
+   
     background-image: url("Main.png");
    
 }
 
 .main h2 {
     color: #ffffff;
-    font-size: 4.1em;
-    font-weight: 300;
-    text-shadow: 0px 0px 1px var(--main-decor-color);
+    font-size: 4em;
+    font-weight: 100;
+    text-shadow: 0px 0px px var(--main-m-color);
   letter-spacing: 4px;
  
-    padding-right: 30px;
 }
 
 .main h2 span {
@@ -92,7 +106,6 @@ section {
     display: flex;
     align-items: start;
     padding-right: 30px;
-  
       
 }
 
@@ -106,33 +119,9 @@ section {
     text-shadow: 0px 0px 10px var(--main-m-color);
     display: flex;
     align-items: center;
-
     padding-right: 30px;
 }
 
-.main-btn {
-    color: #fff;
-    background-color: #5865f2;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
-    background-image: url("https://i.postimg.cc/CMmqFzrq/B.jpg");
-}
-
-.main-btn:hover {
-    background-color: #5865f2;
-    transform: scale(1.1);
-}
-
-
-/* CSS */
-/* CSS */
 .button-24 {
   background: #ff0000;
   border: 1px solid #ff0000;
@@ -171,26 +160,26 @@ section {
       
 
 
-    btn a{
-        height: 60px;
-        width: 220px;
-        border-radius: 30px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        display: grid;
-        color: #fff;
-        place-content: start;
-        font-weight: 600;
-        font-size: 25px;
-        text-transform: uppercase;
-        text-decoration: none;
-        box-sizing: border-box;
-        background: linear-gradient(90deg,#03a9fa,#f441a5,#ffeb3b,#03a9f4);
-        background-size: 400%;
-        cursor: pointer;
-        letter-spacing: 2px;
-    }
+.main-btn {
+    color: #fff;
+    background-color: #ff0000;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    background-image: url("https://i.postimg.cc/CMmqFzrq/B.jpg");
+}
+
+.main-btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+
 .social-icons a {
     color: #ffffff;
     font-size: 1.2em;
@@ -206,8 +195,8 @@ section {
     display: flex;
     justify-content: center;
     color: #ff0000;
-    font-size: 2.5em;
-    font-weight: 950;
+    font-size: 2.2em;
+    font-weight: 800;
     margin-bottom: 30px;
 }
 
@@ -216,18 +205,18 @@ section {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    
 } 
 
 .card {
     background-color: #171717;
-    width: 25em;
+    width: 23em;
     box-shadow: 0 5px 10px rgba(1 1 1 / 15%);
     border-radius: 20px;
-    padding: 30px;
-    margin: 25px;
+    padding: 20px;
+    margin: 5px;
     transition: 0.7s ease;
     
-  
 }
 
 .card:hover {
@@ -251,7 +240,9 @@ section {
     margin: 50px;
 }
 
-
+.skillc {
+    text-align: center;
+}
 
 .projects .content{
     margin-top: 30px;
@@ -278,11 +269,11 @@ section {
 
 .project-category {
     font-size: 0.8em;
-    color: #5865f2;
+    color: #ff0000;
 }
 
 .project-title {
-    color: #5865f2;
+    color: #ff0000;
     display: flex;
     justify-content: space-between;
     text-shadow: 0px 0px 40px var(--main-decor-color);
@@ -296,7 +287,7 @@ section {
 }
 
 .more-details:hover {
-    color: #5865f2;
+    color: #ff0000;
 }
 
 .contact .icon{
@@ -392,8 +383,9 @@ section {
      
     }
 }
-	
-
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
 
 .accordion li.default .submenu {display: block;}
 /**
@@ -431,14 +423,14 @@ section {
 
 hr {
     background: #ff0000;
-	margin: 5px;
+	margin: 2px;
 	height: 3px;
 	width: 150px;
-    border-radius:2px;
+    border-radius:5px;
 	border: hidden;
 	margin-inline-start: auto;
     margin-inline-end: auto;
-    
+  
    }
 
 .fhr {
@@ -510,10 +502,10 @@ h1 {
     animation: animate 1.2s infinite ease-in-out;
 }
 .loader span{
-    background-color: #5865f2;
+    background-color: #ff0000;
     width: 40px;
     height: 40px;
-    border: 1px #5865f2 solid;
+    border: 1px #ff0000 solid;
     border-radius: 5px;
     display: block;
     position: absolute;
@@ -531,153 +523,153 @@ h1 {
 } 
 
 sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -250px;
-    width: 250px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    overflow-y: auto;
-    transition: all 0.3s ease-out;
-  }
-  
-  .sidebar.active {
-    left: 0;
-  }
-  
-  .sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-color: #ff0000;
-    color: #fff;
-  }
-  
-  .sidebar-header h3 {
-    margin: 0;
-    font-size: 20px;
-  }
-  
-  .close-btn {
-    font-size: 30px;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .close-btn:hover {
-    color: #f00;
-  }
-  
-  .sidebar-content {
-    padding: 20px;
-  }
-  
-  .sidebar-content p {
-    margin-top: 0;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .sidebar-content ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .sidebar-content li a {
-    display: block;
-    padding: 10px;
-    color: #666;
-    text-decoration: none;
-    transition: all 0.3s ease-out;
-  }
-  
-  .sidebar-content li a:hover {
-    background-color: #eee;
-  }
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  transition: all 0.3s ease-out;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.close-btn {
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f00;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content p {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-content li a {
+  display: block;
+  padding: 10px;
+  color: #666;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.sidebar-content li a:hover {
+  background-color: #eee;
+}
 
 /* The switch the box around the slider */
 
 .switch {
 
-    display: block;
-    
-    float: right; margin: 3rem;
-    
-    <--width-of-switch: 3.5em; --height-of-switch: 2em;
-    
-    /* size of sliding icon -- sun and moon */
-    
-    --size-of-icon: 1.4em;
-    
-    /* it is like a inline-padding of switch */
-    
-    --slider-offset: 0.3em;
-    
-    position: relative; width: var(--width-of-switch);
-    
-    height: var(--height-of-switch);
-    
-    }
-    
-    /* Hide default HTML checkbox */ .switch input {
-    
-    opacity: 0;
-    
-    width: e;
-    
-    height: 0;
-    
-    }
-    /* The slider */
-    
-    top: 0;
-    
-    .slider { position: absolute; cursor: pointer; left: 0; bottom: 0; background-color: #1a1a1a; transition: .4s; border-radius: 30px;
-    
-    right: 0;
-    
-    }
-    
-    .slider:before {
-    
-    position: absolute;
-    
-    content:"";
-    
-    height: var(--size-of-icon, 1.4em); width: var(--size-of-icon, 1.4em); border-radius: 20px;
-    
-    left: var(--slider-offset, 0.3em);
-    
-    top: 50%;
-    
-    transform: translateY(-50%);
-    
-    background: linear-gradient(40deg, #360000,#1c1c1c 70%); transition: .4s;
-    
-    }
-    
-    input:checked + .slider { background-color: #303136;
-    
-    }
-    
-    input:checked + .slider:before { left: calc(100% - (var(--size-of-icon, 1.4em) +
-    
-    var(--slider-offset, 0.3em))); background: #303136;
-    
-    /* change the value of second inset in box- shadow to change the angle and direction of the moon */
-    
-    box-shadow: inset -3px -2px 5px 2px #8983f7, inset -10px -4px 0 0 #a3dafb; }
-    
-    /* Dark theme */ .dark-mode-theme { background: #212121; color: #E6E6E6;
-    
-                                      }
-    
-    }
+display: block;
+
+float: right; margin: 3rem;
+
+<--width-of-switch: 3.5em; --height-of-switch: 2em;
+
+/* size of sliding icon -- sun and moon */
+
+--size-of-icon: 1.4em;
+
+/* it is like a inline-padding of switch */
+
+--slider-offset: 0.3em;
+
+position: relative; width: var(--width-of-switch);
+
+height: var(--height-of-switch);
+
+}
+
+/* Hide default HTML checkbox */ .switch input {
+
+opacity: 0;
+
+width: e;
+
+height: 0;
+
+}
+/* The slider */
+
+top: 0;
+
+.slider { position: absolute; cursor: pointer; left: 0; bottom: 0; background-color: #1a1a1a; transition: .4s; border-radius: 30px;
+
+right: 0;
+
+}
+
+.slider:before {
+
+position: absolute;
+
+content:"";
+
+height: var(--size-of-icon, 1.4em); width: var(--size-of-icon, 1.4em); border-radius: 20px;
+
+left: var(--slider-offset, 0.3em);
+
+top: 50%;
+
+transform: translateY(-50%);
+
+background: linear-gradient(40deg, #360000,#1c1c1c 70%); transition: .4s;
+
+}
+
+input:checked + .slider { background-color: #303136;
+
+}
+
+input:checked + .slider:before { left: calc(100% - (var(--size-of-icon, 1.4em) +
+
+var(--slider-offset, 0.3em))); background: #303136;
+
+/* change the value of second inset in box- shadow to change the angle and direction of the moon */
+
+box-shadow: inset -3px -2px 5px 2px #8983f7, inset -10px -4px 0 0 #a3dafb; }
+
+/* Dark theme */ .dark-mode-theme { background: #212121; color: #E6E6E6;
+
+                                  }
+
+}
 
 .container{
     position: relative;
