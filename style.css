@@ -755,3 +755,18 @@ box-shadow: inset -3px -2px 5px 2px #8983f7, inset -10px -4px 0 0 #a3dafb; }
     transform: translateX(-50%) rotate(45deg);
 
   }
+
+
+::-webkit-Scrollbar{
+    width: 5px; 
+	background: rgba(5,5,5,1);
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 10px;
+	background: var(--main-decor-color);
+	box-shadow: inset 0 0 20px var(--main-decor-color);
+}
+::-webkit-Scrollbar-track{
+	margin-top: 80px;
+	border-radius: 10px;
+}
